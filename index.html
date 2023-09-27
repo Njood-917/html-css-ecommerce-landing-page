@@ -12,69 +12,159 @@
 </head>
 <body>
   <header class="header">
-    <div class="left-nav">
-   <img src="https://getzeuss.com/wp-content/uploads/2021/11/logo-d.svg" alt="" srcset="" width="50px" height="60px">
-
+    <div class="left-nav"  tabindex="0" role="logo" aria-pressed="false">
+   <img src="https://getzeuss.com/wp-content/uploads/2021/11/logo-d.svg" alt="logo"  width="80p" height="80"   >
 </div>
 <div class="right-nav">
-    <a href="home.html"> Home </a>
-    <a href="#"> Contact </a>
-    <a href="#"> Help </a>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Help</a></li>
+</ul>
 </div>
+        
   </header>
 
+
   <main>
-    <div class="firest-sec">
-        <h2> Must haves </h2>
+    
+    <section class="firest-sec" tabindex="0"  role="heading" aria-level="2">
+        <h2 > Must haves </h2>
         <p>Some of our favourite picks this week.</p>
+        <button type="button">Make an order</button>
 
-                <button type="button">Make an order</button>
-
-    </div>
-    <div class="second-sec">
-        <div>
-            <img src="images/pic4.jpg" width="100px" alt="perfume">
-               <h3> Narciso perfume </h3> 
-               <p>Lorem ipsum dolor at aliquid impedit, sit amet voluptatem molestias!</p>
+    </section>
+    <section class="products">
+        <div class="product">
+          <h3> Narciso perfume </h3>
+          <div class="product-img">
+            <img src="images/pic4.jpg"  alt="perfume" width="200px">
+          </div>
+          
+          <p>Lorem ipsum dolor at aliquid impedit,
+            <br>   sit amet voluptatem molestias!</p>
             
         </div>
 
-        <div>
+        <div class="product">
             <h3> Neacklace </h3> 
-            <img src="images/pic2.jpg" srcset=""width="100px" alt="Neacklace">
-            <p>Lorem ipsum dolor at aliquid impedit, sit amet voluptatem molestias!</p>
+            <div class="product-img">
+              <img src="images/pic2.jpg" alt="Neacklace" width="200px">
+            </div>
+           
+            <p>Lorem ipsum dolor at aliquid impedit,
+              <br> 
+              sit amet voluptatem molestias!</p>
         </div>
-      <div>
-    <h3> palate</h3>
-    <img src="images/pic8.jpg"  srcset="" width="100px" alt="palate">
-    <p>Lorem ipsum dolor at aliquid impedit, sit amet voluptatem molestias!</p>
+      <div class="product">
+               <h3> palate</h3>
+               <div class="product-img">
+                <img src="images/pic8.jpg"   alt="palate" width="200px">
+               </div>
+              
+               <p>Lorem ipsum dolor at aliquid impedit,
+                <br> 
+                sit amet voluptatem molestias!</p>
          </div>
-         <div>
+         <div class="product">
             <h3> Lip stake</h3>
-            <img src="images/pic6.jpg" alt="lip stake" srcset="" width="150px">
-            <p>Lorem ipsum dolor at aliquid impedit, sit amet voluptatem molestias!</p>
-                 </div>
+            <div class="product-img">
+              <img src="images/pic6.jpg" alt="lip stake" width="200px">
+            </div>
+           
+            <p>Lorem ipsum dolor at aliquid impedit, 
+              <br>
+              sit amet voluptatem molestias!</p>
+           </div>
 
-    </div>
+    </section>
+  
 
     <div class="customer-reviews">
+      
         <div class="review">
-            <p class="reviewer-name">John </p>
+          <div class="reviewer">
+            <p>Rawaf</p>
+            <div class="stars-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
             <p class="review-text">Lorem ipsum  id sapien aliquam, a malesuada dui auctor.</p>
         </div>
+
+        <div class="review">
+          <div class="reviewer">
+            <p>Sara</p>
+            <div class="stars-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+            <p class="review-text">Lorem ipsum  id sapien aliquam, a malesuada dui auctor.</p>
+        </div>
+
+        <div class="review">
+          <div class="reviewer">
+            <p>Rima</p>
+            <div class="stars-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+            <p class="review-text">Lorem ipsum  id sapien aliquam, a malesuada dui auctor.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-        <div class="review">
-            <p class="reviewer-name">Sara </p>
-            <p class="review-text">Lorem ipsum  id sapien aliquam, a malesuada dui auctor.</p>
-        </div>
-        <div class="review">
-            <p class="reviewer-name"> Mohammed</p>
-            <p class="review-text">Lorem ipsum  id sapien aliquam, a malesuada dui auctor.</p>
-        </div>
     </div>
     <div class="newsletter-subs">
         <h1>Subscribe to Our Newsletter</h1>
         <p>Stay up-to-date with our latest news and updates.</p>
+
+         <!-- make a form  in footer   -->
     
         <form action="your-backend-script.php" method="POST">
             <label for="email">Email Address:</label>
@@ -93,9 +183,11 @@
 
     </div>
     <div class="contact-info">
+      
       <h3>please feel free and contact us :</h3>
       <p><strong>Email:</strong> john.doe@example.com</p>
-      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p> 
+      
 
      
   </div>
@@ -108,7 +200,8 @@
     
   </footer>
 
-  <form action="contact.html">
+  <!-- <form action="contact.html">
+   
     <label for="username">User Name:</label>
     <input type="text" id="username" name="username" placeholder="enter your name ">
     <br>
@@ -120,6 +213,8 @@
     <br>
 
     <input type="submit" value="Submit">
-  </form>
+  </form> -->
+
+  
 </body>
 </html>
