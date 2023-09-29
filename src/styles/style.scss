@@ -1,13 +1,379 @@
-// src/styles/style.scss
 
-$primary-color: #3498db;
+
+@import '_variables';
+//  @import '_mixin';
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* some changes */
+}
+
 
 body {
   font-family: Arial, sans-serif;
 }
 
 .header {
-  background-color: $primary-color;
-  color: white;
-  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color :$primary-color!important;
+  padding: 10px;
+  align-items: center; 
+  position: static; 
+  top: 0;
+  /* Ana check the sticky part it's work */
+
 }
+
+.right-nav{
+  padding: 10px;
+  
+}
+.right-nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  
+}
+.right-nav ul li{
+  margin: 15px;
+}
+.right-nav a {
+  font-size: 20px;
+    letter-spacing: 3px;
+    color:$secondary-color;
+    text-decoration: none;
+    
+}
+
+.right-nav a:hover{
+    
+  color:$thired-color;
+}
+
+
+.firest-sec{
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+  line-height: 2;
+
+}
+
+.firest-sec h2{
+  font-family: $font-family;
+  font-size: $font-size-big;
+  color:$primary-color;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-align: center;   
+}
+ 
+.firest-sec p{
+  margin-bottom: 20px;
+  color:$primary-color;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: 3px;
+  text-align: center; 
+  font-size: 15px;
+}
+
+.firest-sec button{
+ background-color:$thired-color;
+ padding: 15px;
+ border-radius: 7px;
+ color:$primary-color;
+ font-size: 17px;
+ outline: none;
+ border: none;
+}
+
+.firest-sec button:hover{
+  color: rgba(189, 186, 189, 0.705);
+  background-color: $secondary-color;
+
+}
+
+.products{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  
+}
+
+.products .product{
+  text-align: center;
+ 
+}
+
+.products .product .product-img{
+width: $width-full;
+position: relative;
+display: block;
+margin: auto;
+
+}
+
+.products .product .product-img img{
+ border-radius: 10px;
+}
+
+.content-img{
+  width: $width-full;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(207, 204, 204, 0.904);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+  border-radius: 10px;
+  font-family:$font-family;
+  
+}
+.content-img:hover{
+  opacity: 1;
+}
+
+.content-img h3 {
+  color:$primary-color;
+font-size: 25px;
+}
+
+.customer-reviews {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.review {
+  background-color:$secondary-color;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review .reviewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+}
+
+.review .reviewer p{
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 15px;
+  color: $primary-color;
+}
+
+.stars-rate{
+  color: rgb(197, 197, 53);
+
+}
+.review-text {
+  margin-top: 5px;
+  font-style: italic;
+  color:  $primary-color;
+}
+
+.newsletter-subs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  line-height: 3;
+
+}
+.newsletter-subs h1{
+font-family: $font-family;
+  font-size: 50px;
+  color: rgba(134, 128, 134, 0.705);
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: center; 
+}
+
+.newsletter-subs p{
+
+  color: rgba(90, 89, 90, 0.705);
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: 3px;
+  text-align: center; 
+  font-size: 15px;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+form input{
+ padding: 10px 30px;
+ margin-bottom:15px;
+ border-radius: 7px;
+ border-color: $thired-color;
+ 
+}
+.news-btn{
+  background-color: $thired-color;
+  padding: 10px 15px;
+  border-radius: 7px;
+  color: rgba(248, 244, 248, 0.705);
+  font-size: 17px;
+  border: none;
+}
+.news-btn:hover{
+  color: rgba(189, 186, 189, 0.705);
+  background-color: rgba(73, 70, 73, 0.705);
+}
+
+ footer {
+  background-color: $primary-color; 
+  color:$secondary-color; 
+   padding: 20px;
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+ 
+}
+  
+footer {
+  .important-pages ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    }
+    .important-pages li a {
+      color: $secondary-color;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+    
+    .important-pages li a:hover {
+      color: rgb(159, 102, 192);
+      text-decoration: underline;
+    
+    }
+
+
+}
+.contact-info{
+  text-align: center;
+  line-height: 1.5;
+
+}
+
+.social-icons i {
+  font-size: 25px;
+  margin: 15px;
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.social-icons i:hover {
+  color: $thired-color;
+  transform: scale(1.1); 
+}
+
+
+
+/* start media query */
+
+
+footer  , .header{
+  background-color: $primary-color; 
+  color:$secondary-color; 
+   padding: 20px;
+ display: flex;
+ @media screen and (max-width: 768px) {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+}
+
+.products , .customer-reviews {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+
+
+
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// footer{
+//   // font-size: $font-size-big;
+
+//   @include respond-to($medium-screen) {
+//     font-size: $font-size-mideum;
+//     // max-width: $small-screen;
+//   }
+
+// }
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */
