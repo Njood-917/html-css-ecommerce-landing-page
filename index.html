@@ -12,8 +12,8 @@
 </head>
 <body>
   <header class="header">
-    <div class="left-nav"  tabindex="0" role="logo" aria-pressed="false">
-   <img src="https://getzeuss.com/wp-content/uploads/2021/11/logo-d.svg" alt="logo"  width="80p" height="80"   >
+    <div class="left-nav"  tabindex="0" aria-pressed="false" >
+   <img src="https://getzeuss.com/wp-content/uploads/2021/11/logo-d.svg" alt="logo"  width="80" height="80"   >
 </div>
 <div class="right-nav">
   <ul>
@@ -28,7 +28,7 @@
 
   <main>
     
-    <section class="firest-sec" tabindex="0"  role="heading" aria-level="2">
+    <section class="firest-sec"  aria-level="2">
         <h2 > Must haves </h2>
         <p>Some of our favourite picks this week.</p>
         <button type="button">Make an order</button>
@@ -37,7 +37,7 @@
     <section class="products">
         <div class="product">
           <div class="product-img">
-            <img src="images/pic4.jpg"  alt="perfume" width="200px">
+            <img src="images/pic4.jpg"  alt="perfume" width="200">
           <div class="content-img">
             <h3> Perfumes </h3>
             <p>Lorem ipsum dolor at aliquid impedit,
@@ -50,7 +50,7 @@
 
     <div class="product">
       <div class="product-img">
-        <img src="images/pic2.jpg"  alt="perfume" width="200px">
+        <img src="images/pic2.jpg"  alt="perfume" width="200">
       <div class="content-img">
         <h3> Jewelry</h3>
         <p>Lorem ipsum dolor at aliquid impedit,
@@ -63,7 +63,7 @@
 
 <div class="product">
   <div class="product-img">
-    <img src="images/pic8.jpg"  alt="perfume" width="200px">
+    <img src="images/pic8.jpg"  alt="perfume" width="200">
   <div class="content-img">
     <h3> Makeup</h3>
     <p>Lorem ipsum dolor at aliquid impedit,
@@ -76,9 +76,25 @@
 
 <div class="product">
   <div class="product-img">
-    <img src="images/pic9.jpg"  alt="perfume" width="200px">
+    <img src="images/pic9.jpg"  alt="perfume" width="200">
   <div class="content-img">
     <h3> Bags </h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <p>Lorem ipsum dolor at aliquid impedit,
         sit amet voluptatem molestias!</p>
 
@@ -96,10 +112,10 @@
           <div class="reviewer">
             <p>Rawaf</p>
             <div class="stars-rate">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-star" aria-label="Solid Star"></i>
+              <i class="fa-solid fa-star" aria-label="Solid Star"></i>
+              <i class="fa-regular fa-star" aria-label="Empty Star"></i>
+              <i class="fa-regular fa-star" aria-label="Empty Star"></i>
             </div>
           </div>
             <p class="review-text">Lorem ipsum  id sapien aliquam, a malesuada dui auctor.</p>
@@ -109,9 +125,9 @@
           <div class="reviewer">
             <p>Sara</p>
             <div class="stars-rate">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-star" aria-label="Solid Star"></i>
+              <i class="fa-solid fa-star" aria-label="Solid Star"></i>
+              <i class="fa-regular fa-star" aria-label="Empty Star"></i>
             </div>
           </div>
             <p class="review-text">Lorem ipsum  id sapien aliquam, a malesuada dui auctor.</p>
@@ -121,9 +137,9 @@
           <div class="reviewer">
             <p>Rima</p>
             <div class="stars-rate">
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"  aria-label="Empty Star"></i>
+              <i class="fa-solid fa-star" aria-label="Solid Star"></i>
+              <i class="fa-solid fa-star" aria-label="Solid Star"></i>
               
             </div>
           </div>
@@ -137,8 +153,10 @@
         <h1>Subscribe to Our Newsletter</h1>
         <p>Stay up-to-date with our latest news and updates.</p>
         <form action="contact.html" >
-            <input type="email"  name="email" placeholder="Enter your email" required>
+          <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
             <span></span>
+            <label for="password">Password:</label>
             <input type="password" name="password" placeholder="Enter your password" required>
             <button type="submit" class="news-btn">Subscribe</button>
         </form>
